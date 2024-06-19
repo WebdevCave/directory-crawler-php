@@ -25,14 +25,11 @@ class Crawler
      *
      * @return string[]
      */
-    public function all(): array
+    public function contents(): array
     {
         $this->feed();
 
-        $all = [];
-        array_push($all, ...$this->directories, ...$this->files);
-
-        return $all;
+        return [...$this->directories, ...$this->files];
     }
 
     /**
@@ -54,7 +51,7 @@ class Crawler
         $start = mb_strlen($this->dir) + 1;
 
         foreach ($this->files() as $file) {
-            $className = $namespace . str_replace('\\', '/', mb_substr($file, $start, -4));
+            $className = $namespace . str_replace('/', '\\', mb_substr($file, $start, -4));
 
             if ($enforce && !class_exists($className)) {
                 continue;
