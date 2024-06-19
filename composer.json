@@ -1,0 +1,21 @@
+{
+    "name": "webdevcave/directory-crawler",
+    "description": "MIT",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Webdevcave\\DirectoryCrawler\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Carlos A. B. Carucce",
+            "email": "carloscarucce@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "ext-mbstring": "*"
+    }
+}
