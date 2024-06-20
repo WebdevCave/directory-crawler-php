@@ -1,6 +1,11 @@
 # Directory Crawler
 
 ![StyleCi](https://github.styleci.io/repos/817050761/shield)
+[![Latest Stable Version](https://poser.pugx.org/webdevcave/directory-crawler/v/stable?format=flat-square)](https://packagist.org/packages/webdevcave/directory-crawler)
+[![Latest Unstable Version](https://poser.pugx.org/webdevcave/directory-crawler/v/unstable?format=flat-square)](https://packagist.org/packages/webdevcave/directory-crawler)
+[![Total Downloads](https://poser.pugx.org/webdevcave/directory-crawler/downloads?format=flat-square)](https://packagist.org/packages/webdevcave/directory-crawler)
+[![License](https://poser.pugx.org/webdevcave/directory-crawler/license?format=flat-square)](https://packagist.org/packages/webdevcave/directory-crawler)
+
 
 Directory Crawler PHP is a simple PHP library for recursively crawling through directories and listing files and
 directories.
