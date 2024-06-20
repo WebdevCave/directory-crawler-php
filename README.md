@@ -1,5 +1,7 @@
 # Directory Crawler
 
+![StyleCi](https://github.styleci.io/repos/817050761/shield) 
+
 Directory Crawler PHP is a simple PHP library for recursively crawling through directories and listing files and
 directories.
 
