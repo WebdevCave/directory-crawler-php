@@ -38,7 +38,7 @@ class Crawler
      * $namespace string MUST end with a backslash (\).
      *
      * @param string $namespace
-     * @param bool $enforce
+     * @param bool   $enforce
      *
      * @return string[]
      */
@@ -51,7 +51,7 @@ class Crawler
         $start = mb_strlen($this->dir) + 1;
 
         foreach ($this->files() as $file) {
-            $className = $namespace . str_replace('/', '\\', mb_substr($file, $start, -4));
+            $className = $namespace.str_replace('/', '\\', mb_substr($file, $start, -4));
 
             if ($enforce && !class_exists($className)) {
                 continue;
