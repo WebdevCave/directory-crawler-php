@@ -38,7 +38,7 @@ class Crawler
      * $namespace string MUST end with a backslash (\).
      *
      * @param string $namespace
-     * @param bool   $enforce
+     * @param bool $enforce
      *
      * @return string[]
      */
