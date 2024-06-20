@@ -45,7 +45,7 @@ $directories = $crawler->directories();
 // List classes inside the directories
 $namespace = 'My\\Project\\';
 $enforce = false; //Faster
-$enforce = true; //Reliable but slower. May cause performance issues, depending on the number of occurrences.
+//$enforce = true; //Reliable but slower. May cause performance issues, depending on the number of occurrences.
 $classes = $crawler->classes($namespace, $enforce);
 
 print_r(compact('path', 'contents', 'files', 'directories', 'classes')); //Show results
