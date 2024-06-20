@@ -1,6 +1,6 @@
 {
   "name": "webdevcave/directory-crawler",
-  "description": "MIT",
+  "description": "Directory Crawler PHP is a simple PHP library for recursively crawling through directories and listing files and directories.",
   "type": "library",
   "license": "MIT",
   "autoload": {
