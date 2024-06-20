@@ -2,8 +2,8 @@
 
 namespace Webdevcave\DirectoryCrawler\Tests;
 
-use Webdevcave\DirectoryCrawler\Crawler;
 use PHPUnit\Framework\TestCase;
+use Webdevcave\DirectoryCrawler\Crawler;
 
 class CrawlerTest extends TestCase
 {
@@ -56,7 +56,6 @@ class CrawlerTest extends TestCase
 
         $actual = $this->crawler->classes('Webdevcave\\DirectoryCrawler\\Tests\\TargetNamespace\\');
         print_r(compact('actual', 'expected'));
-
 
         $this->assertEmpty(
             array_diff($this->crawler->classes('Webdevcave\\DirectoryCrawler\\Tests\\TargetNamespace\\'), $expected),
