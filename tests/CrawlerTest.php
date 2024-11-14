@@ -55,7 +55,6 @@ class CrawlerTest extends TestCase
         $expected[] = 'Webdevcave\\DirectoryCrawler\\Tests\\TargetNamespace\\NotAnActualClass';
 
         $actual = $this->crawler->classes('Webdevcave\\DirectoryCrawler\\Tests\\TargetNamespace\\');
-        print_r(compact('actual', 'expected'));
 
         $this->assertEmpty(
             array_diff($this->crawler->classes('Webdevcave\\DirectoryCrawler\\Tests\\TargetNamespace\\'), $expected),
